@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>A basic calculator</title>
+   <script src="script.js"></script>
+  
+</head>
+
+  
+<body>
+ 
+ <script>
+   
+
+  const num1 = parseFloat (prompt ("Enter a number: "));
+  const num2 = parseFloat (prompt ("Enter another number: "));
+
+    const operator = prompt ("Enter operator (+, -, /, *)");
+
+    let result = 0;
+
+    if (isNaN(num1) || isNaN(num2)){
+      alert("wrong input! Kindly refresh and try again");
+    }
+   else{
+     
+     if(operator == '+'){
+       result = num1 + num2;
+     }
+
+     else if(operator == '-'){
+       result = num1 - num2;
+     }
+
+      else if(operator == '*'){
+       result = num1 * num2;
+     }
+
+      else if(operator == '/'){
+       result = num1 / num2;
+     }
+
+     alert(result);
+       
+   }
+   
+
+ </script>
+
+</body>
+
+</html>
+
+      
+
+
+
+
+
+  
+    
+      
+
+        
